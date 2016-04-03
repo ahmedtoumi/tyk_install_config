@@ -15,6 +15,11 @@ sudo apt-get update
 sudo apt-get install -y apt-transport-https
 
 #Now lets add the required repos and update again (notice the -a flag in the second Tyk commands - this is important!):
+# this step allow to :
+#    Add the Mongo DB repository for the latest version (3.0 as of time of writing)
+#    Add the Tyk Gateway and Tyk Dashboard repositories
+#    Updat our package list
+
 
 echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
 
