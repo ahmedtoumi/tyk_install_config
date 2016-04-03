@@ -32,3 +32,6 @@ echo "deb https://packagecloud.io/tyk/tyk-dashboard/ubuntu/ trusty main" | sudo 
 echo "deb-src https://packagecloud.io/tyk/tyk-dashboard/ubuntu/ trusty main" | sudo tee -a /etc/apt/sources.list.d/tyk_tyk-dashboard.list
 
 sudo apt-get update
+
+#We’re now ready to install Tyk Gateway and tyk Dashboard, along with all the main dependencies: Redis and MongoDB
+sudo apt-get install -y mongodb-org redis-server tyk-gateway tyk-dashboard
