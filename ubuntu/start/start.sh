@@ -1,7 +1,7 @@
 #1. Start Tyk and Tyk dashboard
 
 sudo service tyk-gateway start
-sudo service tyk-dashboard sta
+sudo service tyk-dashboard start
 
 #2. Bootstrap the dashboard with an initial user and organisation:
 
